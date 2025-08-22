@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import  { useState, useEffect } from "react";
 import TimeFrameSelector from "./components/TimeFrameSelector";
 import StockChart from "./components/StockChart";
 
@@ -49,7 +49,7 @@ function App() {
   }, [timeFrame]);
 
   return (
-    <div style={{ padding: 20, border: "1px solid black" }}>
+    <div style={{ padding: 20, border: "1px solid black", margin: "20px auto", width: 500 }}>
       <TimeFrameSelector timeFrame={timeFrame} setTimeFrame={setTimeFrame} />
       <StockChart data={data} loading={loading} />
     </div>
