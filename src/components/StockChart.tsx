@@ -20,7 +20,9 @@ interface StockChartProps {
 }
 
 const StockChart: React.FC<StockChartProps> = ({ data, loading }) => {
-  if (loading) return <p>Loading...</p>;
+  if (!loading) return <p
+    style={{ textAlign: "center", height:450 }}
+  >Loading...</p>;
 
   return (
     <ResponsiveContainer width="100%" height={400}>

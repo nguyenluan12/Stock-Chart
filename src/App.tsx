@@ -49,7 +49,7 @@ function App() {
   }, [timeFrame]);
 
   return (
-    <div style={{ padding: 20, border: "1px solid black", margin: "20px auto", width: 500 }}>
+    <div style={{  border: "1px solid black", width: 500 }}>
       <TimeFrameSelector timeFrame={timeFrame} setTimeFrame={setTimeFrame} />
       <StockChart data={data} loading={loading} />
     </div>
